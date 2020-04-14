@@ -9388,6 +9388,9 @@ faded_white{
     .black.link:hover, .black.link:focus {
       color: #272727; }
 
+.faded_black {
+  background: #333333; }
+
 .twitter_color {
   color: #0aa0f5; }
   .twitter_color.link {

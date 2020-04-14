@@ -24,15 +24,15 @@ body {
 }
 .prx {
     position: absolute;
-/*    color: #FFF;*/
+    /*    color: #FFF;*/
     font-family: 'Prompt', sans-serif;
-/*    font-size:1.5em;*/
+    /*    font-size:1.5em;*/
     overflow: hidden;
 }
 .button {
     cursor:pointer;
-/*    cursor: url('../imgs/target.cur'), default !important;*/
-/*    font-size:3em;*/
+    /*    cursor: url('../imgs/target.cur'), default !important;*/
+    /*    font-size:3em;*/
     width:400px;
     text-decoration: none;
 }
@@ -44,10 +44,10 @@ body {
     color:#777;
 }
 a {
-  color: #333333;
+    color: #333333;
 }
 a:hover, a:active, a:focus {
-  color:#F0EEF3;
+    color:#F0EEF3;
 }
 h1 {
     font-size: 82px;
@@ -67,52 +67,64 @@ b, strong {
 
 
 
-.lightbox-toggle {
-    color: #DD3224;
-}
 
-.backdrop {
-    z-index: 4;
-    opacity: .0;
-    filter: alpha(opacity=0);
-    display: none;
+.modalDialog {
     position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background: #000;
-
-}
-
-.box {
     font-family: 'Prompt', sans-serif;
-    font-weight: 400;
-    align-items:center;
-    z-index: 5;
-    position: fixed;
-    opacity: 1;
-    display: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: auto;
-    background: #DD3224;
-    color: #F0EEF3;
-    padding: 20px;
-    border-radius: 5px;
-    overflow: visible;
-    -webkit-overflow-scrolling: touch;
-
-    * {
-        z-index: 3;
-    }    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
 }
+
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 80%;
+    height: 60%;
+    color: #F0EEF3;
+    font-family: 'Prompt', sans-serif;
+    position: relative;
+    overflow: scroll;
+    margin: 10% auto;
+    padding: 20px 30px 20px 40px;
+    background: #DD3224;
+    border-radius: 10px;
+}
+
 .close {
+    background: transparent;
     font-family: 'Taviraj', serif;
     font-weight: 700;
     color: #333333;
     text-align: right;
     cursor: pointer;
+/*
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    text-decoration: none;
+    font-weight: 300;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+*/
 }
+

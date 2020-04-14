@@ -7,9 +7,6 @@
         <link rel="icon" href="imgs/target.png" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;700;900&display=swap" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet" />
-        <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-
     </head>
 
     <body>
@@ -21,39 +18,58 @@
             <a href="#weekone" class="prx button font32" style="left:20%;top:15%;z-index:1">Week One</a>
             <a href="#weektwo" class="prx button font32" style="left:70%;top:10%;z-index:1">Week Two</a>
             <!--            <a href="#pan2" class="prx button" style="left:60%;top:70%;z-index:1">Week Three</a>-->
-            <a href="#about" class="prx button font14 faded_white lightbox-toggle" style="left:80%;top:80%;z-index:1">a little bit more about me...</a>
+            <a class="prx button" href="#about" style="left:80%;top:80%;z-index:1">a little bit more about me...</a>
         </div>
 
-        
-
-
-            <!-- week one -->
-            <div id="#weekone" class="page" style="left:200%;top:-200%">
-                <iframe class="prx" width="800" height="600" src="https://www.zygotebody.com" frameborder="0" style="left:-10%;top:0%;z-index:0"></iframe>
-                <iframe class="prx" width="560" height="315" src="https://www.youtube.com/embed/WFCvkkDSfIU?start=65" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="left:60%;top:70%;z-index:0"></iframe>
-                <div class="prx" style="left:0%;top:25%;width:70%;z-index:2;color:#DD3224;font-size:128px;font-weight:bold;text-align:center">interactive<br/> body</div>
-                <div class="prx txt" style="left:60%;top:10%;width:40%;z-index:1">
-                    Drawing is about representation. We can represente something you are seeing or represent what we are imagine. So, it’s possible drawing so many parts of our body, but we can imagine much more.<br><br><a href="#diana" class="lightbox-toggle">Here some exploration</a> with Diana, my daughter.
+        <div id="about" class="modalDialog">
+            <div>
+                <div class="close">
+                    <a href="#main" class="font18">close</a>
                 </div>
-                <a href="#main" class="prx txt button font32" style="left:35%;top:100%;z-index:1">Back</a>
+                <div>
+                    <p class="text_left font20 padding_top20 padding_bottom20 padding_left20 padding_right20">a consultant, entrepreneur and artist.</p>
+                    <h1 class="text_center padding_top20 padding_bottom20 padding_left20 padding_right20">lina lopes</h1>
+                    <p>expresses in her trajectory the intersection between two worlds: art and technology. Graduated in Cinema by University of São Paulo and Master in Design by Anhembi-Morumbi College, she has an interdisciplinary background that also includes theater, engineering and computing.</p>
+                    <p>She has extensive experience in projects, working on the themes of parametric and generative design, video mapping, interactivity, Arduino programming, wearables, internet of things, biomaterials, among others. She is a speaker on innovation and mentor of bootcamps. Directs LILO.ZONE, space for creative use of technology and is at the forefront of the LILO.THINK initiative focused on immersive processes. She is enthusiastic of experimentation, collaboration and improvisation.</p>
+                    <div class="text_center"><img class="padding_top20 padding_bottom20 padding_left20 padding_right20" src="imgs/Lina%20Lopes-09.jpg" alt=""  width="640"> </div>
+
+                    <p>She found in Design Sprint a tool to make one of her favorite things: to put ideas in the world through prototypes, which go beyond mere ideation. From engineering, she inherited the clarity of the processes. From experience with theater and team management, she realized that people are more important than processes. Aims through LILO.THINK to drive this relationship between people and processes, metabolizing creativity and generating unpredictable solutions.</p>
+                </div>
             </div>
-            <div class="backdrop"></div>
-            <div id="diana" class="box">
-                <div class="close">close</div>
+        </div>
+
+
+        <!-- week one -->
+        <div id="#weekone" class="page" style="left:200%;top:-200%">
+            <iframe class="prx" width="800" height="600" src="https://www.zygotebody.com" frameborder="0" style="left:-10%;top:0%;z-index:0"></iframe>
+            <iframe class="prx" width="560" height="315" src="https://www.youtube.com/embed/WFCvkkDSfIU?start=65" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="left:60%;top:70%;z-index:0"></iframe>
+            <div class="prx" style="left:0%;top:25%;width:70%;z-index:2;color:#DD3224;font-size:128px;font-weight:bold;text-align:center">interactive<br/> body</div>
+            <div class="prx txt" style="left:60%;top:10%;width:40%;z-index:1">
+                Drawing is about representation. We can represente something you are seeing or represent what we are imagine. So, it’s possible drawing so many parts of our body, but we can imagine much more.<br><br><a href="#diana">Here some exploration</a> with Diana, my daughter.
+            </div>
+            <a href="#main" class="prx txt button font32" style="left:35%;top:100%;z-index:1">Back</a>
+        </div>
+
+        <!--        <div class="modal-overlay"></div>-->
+        <div id="diana" class="modalDialog">
+            <div>
+                <div class="close">
+                    <a href="#weekone" class="font18">close</a>
+                </div>
                 <div style="overflow: scroll; height: 400px">
                     <p class="text_left font20 padding_top20 padding_bottom20 padding_left20 padding_right20">Thanks to the digital revolution, there are many tools to explore the way we can see the body. Here I did some experimentation using 3D digital body navigation and projection mapping.</p>
                     <h1 class="text_center padding_top20 padding_bottom20 padding_left20 padding_right20">digital twin body</h1>
                     <p>Using platforms that we can navigate inside the human body, I showed to Diana (6 years old) how her heart beats and the movement of her lungs. she had doubts about which side the heart beats.</p>
                     <p class="text_left font20 padding_top20 padding_bottom20 padding_left20 padding_right20">The simple platform I found was <a href="https://www.zygotebody.com/">Zygote Body</a> but I preferred used <a href="https://www.biodigital.com/">Bio Digital</a> cause have more libraries and some animations. In neither of them I founded kids body specifically, so I needed to adapt.</p>
                     <p>For the projection I used a mix of VJing software <a href="https://www.garagecube.com/modul8/">(Modul8)</a> and mapping projection software <a href="https://madmapper.com/">(MadMapper)</a></p>
-                    <img class="padding_top20 padding_bottom20 padding_left20 padding_right20" src="imgs/diana1.jpg" alt="" height="640" width="360">
-                    <img class="padding_top20 padding_bottom20 padding_left20 padding_right20" src="imgs/diana2.gif" alt="" height="640" width="360">
-                    <img class="padding_top20 padding_bottom20 padding_left20 padding_right20" src="imgs/diana3.jpg" alt="" height="640" width="360">
-                    <img class="padding_top20 padding_bottom20 padding_left20 padding_right20" src="imgs/diana4.jpg" alt="" height="640" width="360">
+                    <div class="text_center"><img class="padding_top20 padding_bottom20 padding_left20 padding_right20" src="imgs/diana1.jpg" alt="" height="640" width="360">
+                    <img class="padding_top20 padding_bottom20 padding_left20 padding_right20" src="imgs/diana2.gif" alt="" height="640" width="360"></div>
+                    <div class="text_center"><img class="padding_top20 padding_bottom20 padding_left20 padding_right20" src="imgs/diana3.jpg" alt="" height="640" width="360">
+                    <img class="padding_top20 padding_bottom20 padding_left20 padding_right20" src="imgs/diana4.jpg" alt="" height="640" width="360"></div>
                     <p>A important note: mapping a kid it’s hard. She refused to stand still. I need to try again in one day she is not crazy to leave and play videogame… But the result pays off. The next day she started questions about her own body.</p>
                 </div>
-
             </div>
+
 
             <!-- week two -->
             <!--

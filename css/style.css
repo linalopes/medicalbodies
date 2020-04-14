@@ -71,7 +71,7 @@ b, strong {
 .modalDialog {
     position: fixed;
     font-family: 'Prompt', sans-serif;
-    top: 0;
+    top: -30px;
     right: 0;
     bottom: 0;
     left: 0;
